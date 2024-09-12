@@ -20,10 +20,10 @@ This FastAPI application is designed to send multiple HTTP requests concurrently
 
   1. Clone the repository:
 
-    ```shell
-    git clone https://github.com/yourusername/functionapp-trial.git
-    cd functionapp-trial\fastapi-trialflex
-    ```
+      ```shell
+      git clone https://github.com/yourusername/functionapp-trial.git
+      cd functionapp-trial\fastapi-trialflex
+      ```
 
   2. Create a virtual environment and activate it:
       ```shell
@@ -64,7 +64,7 @@ AZURE_FUNCTION_URL = "https://your-azure-function-url"
 
   4. The response will include the total time taken for all requests, the average latency per request, and the results of individual requests.
 
-        ### Example Response
+        #### Example Response of /trigger endpoint
         ```json
         {
             "message": "Request accepted",
@@ -72,7 +72,7 @@ AZURE_FUNCTION_URL = "https://your-azure-function-url"
         }
         ```
 
-        #### To Check the Status
+        #### Example Response of /status/{request_id} endpoint
         ```json
         {
             "status": "completed",
