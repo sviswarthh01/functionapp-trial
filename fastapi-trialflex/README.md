@@ -21,7 +21,7 @@ This FastAPI application is designed to send multiple HTTP requests concurrently
   1. Clone the repository:
 
       ```shell
-      git clone https://github.com/yourusername/functionapp-trial.git
+      git clone https://github.com/sviswarthh01/functionapp-trial.git
       cd functionapp-trial\fastapi-trialflex
       ```
 
