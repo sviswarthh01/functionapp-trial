@@ -21,8 +21,8 @@ This FastAPI application is designed to send multiple HTTP requests concurrently
   1. Clone the repository:
 
     ```shell
-    git clone https://github.com/yourusername/fastapi-request-dispatcher.git
-    cd fastapi-request-dispatcher
+    git clone https://github.com/yourusername/functionapp-trial.git
+    cd functionapp-trial\fastapi-trialflex
     ```
 
   2. Create a virtual environment and activate it:
@@ -46,24 +46,23 @@ AZURE_FUNCTION_URL = "https://your-azure-function-url"
 ```
 
 ## Usage
-   1. Run the FastAPI application using uvicorn:
+  1. Run the FastAPI application using uvicorn:
 
        ```shell
        uvicorn webapp:app --port 8181 --reload
        ```
-
-    2. Trigger the dispatch of requests by accessing the /trigger endpoint:
+  2. Trigger the dispatch of requests by accessing the /trigger endpoint:
    
         ```shell
         curl -X POST "http://localhost:8181/trigger"
         ```
-    3. Check the status of the requests by accessing the /status/{request_id} endpoint:
+  3. Check the status of the requests by accessing the /status/{request_id} endpoint:
    
         ```shell
         curl -X GET "http://localhost:8181/status/{request_id}"
         ```
 
-    4. The response will include the total time taken for all requests, the average latency per request, and the results of individual requests.
+  4. The response will include the total time taken for all requests, the average latency per request, and the results of individual requests.
 
         ### Example Response
         ```json
